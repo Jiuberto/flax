@@ -7,26 +7,79 @@
 	<style>
 		* { box-sizing: border-box;}
 
-		body {
-			font-size:'Segoe UI';
-		}
+		* {
+    box-sizing: border-box;
+}
 
-		img {
-			max-width: 100%;
-		}
+ h2, h3,h4, main {
+    text-align: center;
+    align-items: center;
+}
+
+html{
+    border: n;
+}
+
+
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #bf8869;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+
+}
+
+
+
+
+h1 {
+    width: 99%;
+    text-align: center;
+    left: 0;
+}
+
+.com {
+        
+        color: black;
+        font-weight: bold;
+        display: inline-block;/*tranforma em inline e block*/
+        width: 50%;
+        padding: 1%;
+        /*  transition: 2s; aplica o efeito na saida e na volta*/
+
+    
+    
+        /* padding-block: 5%; espaço de dentro do fundo */
+    
+        border: solid 1px;
+    
+        /*alternativa antiga ao padding-block
+        box-sizing: border-box; */
+    
+}
 
 	.caixa {
-			
-			width: 30%;
-			padding: 8px;
+        width: 50%;
+
+		
             
 			
 		} 
 
 		#exemplo-flaxbox{
             margin-top: 0%;
-			background-color: greenyellow;
+			background-color: #26120B;
 			display: flex;
+            flex-wrap: wrap;
+            border: none;
+            color: white;
+        
+            
 
 /*justify-content
 Em direção padrão "row", se comporta como alinhamento horizontal
@@ -44,11 +97,15 @@ em modo "column", alinha horizontalmente*/
 		 } 
 
          footer {
-  position: fixed; /* Fixar o footer na posição */
-  bottom: 0;       /* Posicionar na parte inferior da tela */
-  width: 100%;     /* Ocupar toda a largura da tela */
-  z-index: 100;    /* Garantir que o footer esteja acima de outros elementos */
+            margin: 0%;
+            padding: 0%;
+            border: none;
+/* Fixar o footer na posição */
+     /* Posicionar na parte inferior da tela */
+     /* Ocupar toda a largura da tela */
+    /* Garantir que o footer esteja acima de outros elementos */
             left: 0%;
+            
 }
 
 /*         footer {
@@ -65,39 +122,68 @@ em modo "column", alinha horizontalmente*/
 	</style>
 </head>
 <body>
-    <h1>Flexbox</h1>
-    <hr>
-    <p>Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de elementos no HTML. Muito útil na elaboração de layouts. </p>
+    <header>
+        <h2><a href="">Menu &equiv;</a></h2>
+        <h1>Lemel</h1>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+        <h3>Informe seu E-mail</h3>
+        <div>
+            <label for="nome">Email:</label>
+            <input required placeholder="Digite seu email" type="email" name="email" id="email">  <button id="buscar">Buscar</button>
+        </div>
+        <h4>ou</h4>
+        <h3>Entre com</h3>
+        <p class="com">Entra com Facebook</p>
+        <p class="com">Entra com Google</p>
+    </main>
 
 	<footer>
 <div id="exemplo-flaxbox">
 	<div class="caixa">
-		<img src="imagens/mini-apple.jpg" alt="">
-		<h2>Apple</h2>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsam.</p>
+		<h2>Contato</h2>
+        <ul>
+            <li>Atentimento</li>
+            <li>Onde encontrar</li>
+            <li>Chat Online</li>
+            <li>SEE ON MAP</li>
+        </ul>
 	</div>
 
 
 
 	<div class="caixa">
-		<img src="imagens/mini-ibm.jpg" alt="">
-		<h2>IBM</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+		<h2>Siga</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/lemelmodaeacessorios?igsh=MTlzemhvcGx2cGM3Zw==">@lemelmodaeacessorios</a></li>
+            <li>SEE ON MAP</li>
 	</div>
 
-</div>
-<div id="exemplo-flaxbox">
+
 
 	<div class="caixa">
 		<img src="imagens/mini-microsoft.jpg" alt="">
-		<h2>Microsoft</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+		<h2>FAQ</h2>
+		<ul>
+            <li>Frete & entrega</li>
+            <li>Garantia</li>
+            <li>Forma de pagamento</li>
+            <li>Troca & devolução</li>
+            <li>Segurança</li>
+            <li>Termos & condições</li>
+        </ul>
 	</div>
 
     <div class="caixa">
-		<img src="imagens/mini-microsoft.jpg" alt="">
-		<h2>Microsoft</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+		<h2>Minha conta</h2>
+        <ul>
+            <li>Meus dados</li>
+            <li>Meus pedidos</li>
+            <li>Minhas trocas</li>
+            <li>Vale compras</li>
+        </ul>
 	</div>
 
 </div>
