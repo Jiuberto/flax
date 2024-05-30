@@ -1,5 +1,5 @@
 
-<? include 'cabecalho.php'?>
+<?php include 'cabecalho.php'?>
 
 
     <main>
